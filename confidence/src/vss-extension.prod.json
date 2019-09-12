@@ -1,0 +1,118 @@
+{
+    "manifestVersion":  1,
+    "id":  "mmercanapp-prod",
+    "version":  "1.0.38",
+    "name":  "mmercanapp-prod",
+    "publisher":  "mmercan2",
+    "description":  "All test app",
+    "targets":  [
+                    {
+                        "id":  "Microsoft.VisualStudio.Services"
+                    }
+                ],
+    "scopes":  [
+                   "vso.work",
+                   "vso.test",
+                   "vso.release",
+                   "vso.build",
+                   "vso.work_write",
+                   "vso.test_write",
+                   "vso.profile",
+                   "vso.code",
+                   "vso.code_status",
+                   "vso.dashboards",
+                   "vso.project",
+                   "vso.release_execute"
+               ],
+    "icons":  {
+                  "default":  "extension-icon.png"
+              },
+    "categories":  [
+                       "Azure Pipelines"
+                   ],
+    "contributions":  [
+                          {
+                              "id":  "testApp01-prod",
+                              "type":  "ms.vss-web.hub",
+                              "includes":  [
+                                               "ms.vss-releaseManagement-web.release-service-data-external"
+                                           ],
+                              "description":  "sentinel Dashboard",
+                              "targets":  [
+                                              "ms.vss-web.home-hub-group",
+                                              "ms.vss-test-web.test-hub-group"
+                                          ],
+                              "properties":  {
+                                                 "name":  "sentinel-prod",
+                                                 "title":  "sentinel Dashboard",
+                                                 "uri":  "index.html"
+                                             }
+                          }
+                      ],
+    "files":  [
+                  {
+                      "addressable":  true,
+                      "path":  "assets/main.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "assets/VSS.SDK.min.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "3rdpartylicenses.txt"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "extension-icon.png"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "fa-brands-400.14c590d124662eb50efa.eot"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "fa-regular-400.aa66d0e0e38c75666e98.eot"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "fa-solid-900.42e1fbd2cf655a0b44a2.eot"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "favicon.ico"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "index.html"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "main-es2015.c92d5956971ff1b59d35.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "main-es5.4957962b0eec0ce3df71.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "polyfills-es2015.27661dfa98f6332c27dc.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "polyfills-es5.7f43b971448d2fb49202.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "runtime-es2015.858f8dd898b75fe86926.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "runtime-es5.741402d1d47331ce975c.js"
+                  },
+                  {
+                      "addressable":  true,
+                      "path":  "styles.d6601ef1149b5083d4d9.css"
+                  }
+              ]
+}

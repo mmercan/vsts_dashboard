@@ -24,7 +24,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/extension-icon.png"
             ],
             "styles": [
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
