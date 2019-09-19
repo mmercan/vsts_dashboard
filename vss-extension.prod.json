@@ -1,0 +1,97 @@
+{
+    "manifestVersion": 1,
+    "id": "confidence-extension-prod",
+    "version": "1.0.2",
+    "name": "Confidence Extension",
+    "publisher": "mmercan2",
+    "description": "Awesome tools to bring Tests and Work items together",
+    "targets": [{
+        "id": "Microsoft.VisualStudio.Services"
+    }],
+    "scopes": [
+        "vso.work",
+        "vso.test",
+        "vso.release",
+        "vso.build",
+        "vso.work_write",
+        "vso.test_write",
+        "vso.profile",
+        "vso.code",
+        "vso.code_status",
+        "vso.dashboards",
+        "vso.project",
+        "vso.release_execute"
+    ],
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "contributions": [{
+        "id": "confidence-dashboard-prod",
+        "type": "ms.vss-web.hub",
+        "includes": [
+            "ms.vss-releaseManagement-web.release-service-data-external"
+        ],
+        "description": "Awesome dashboard brings linked tests and workitems and give you a confidence score base on linked tests and test results",
+        "targets": [
+            "ms.vss-web.home-hub-group",
+            "ms.vss-test-web.test-hub-group"
+        ],
+        "properties": {
+            "name": "Confidence",
+            "title": "Confidence Dashboard",
+            "uri": "index.html"
+        }
+    }],
+    "files": [{
+            "addressable": true,
+            "path": "assets/main.js"
+        },
+        {
+            "addressable": true,
+            "path": "assets/VSS.SDK.min.js"
+        },
+        {
+            "addressable": true,
+            "path": "3rdpartylicenses.txt"
+        },
+        {
+            "addressable": true,
+            "path": "favicon.ico"
+        },
+        {
+            "addressable": true,
+            "path": "index.html"
+        },
+        {
+            "addressable": true,
+            "path": "main-es2015.8518ff2bc23993759917.js"
+        },
+        {
+            "addressable": true,
+            "path": "main-es5.d5f95827b7732be3606a.js"
+        },
+        {
+            "addressable": true,
+            "path": "polyfills-es2015.27661dfa98f6332c27dc.js"
+        },
+        {
+            "addressable": true,
+            "path": "polyfills-es5.7f43b971448d2fb49202.js"
+        },
+        {
+            "addressable": true,
+            "path": "runtime-es2015.858f8dd898b75fe86926.js"
+        },
+        {
+            "addressable": true,
+            "path": "runtime-es5.741402d1d47331ce975c.js"
+        },
+        {
+            "addressable": true,
+            "path": "styles.09e2c710755c8867a460.css"
+        }
+    ]
+}
